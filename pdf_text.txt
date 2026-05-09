@@ -1,0 +1,149 @@
+
+
+--- EXTRACTING PRD_ Fraud model and admin tool-2025081511001990.pdf ---
+                                        
+PRD: Fraud model and admin tool
+                                        
+Overview
+ In order to scale and automate our fraud processes with expected business growth, we need to leverage our 
+ML capabilities, intelligently score transactions, surface that information to the risk team, and pass back our 
+internal team's decisions to improve the model. 
+Description
+Phase 1 comprises of building and training a fraud-speciﬁc model in SAVVI. Phase 2 will be focused on bringing 
+the score into an admin portal tool used by the risk team to review transactions ﬂagged by the model. Their 
+decisioning will be passed back to the model for additional training. Once the admin tool is live, we will work 
+with the riskops team to determine a score threshold to have the model make automatic rejection decisions 
+and have the team reviewing 'gray area' transactions. 
+What
+Phase 1: Train Fraud Model
+Product Owner: @Adrienne Peters 
+Lead Developer:  Jason Chen, Ricky Caraher
+Slack:
+Team:  Guard
+Applicable Links: 
+Initiative Link: Private ( )
+Lucid Design:  
+Scoping Link: 
+https://app.clickup.com/t/10563802/GRD-818  https://lucid.app/lucidchart/55e30193-4f5f-48db-bad7-6d4114d26225/edit
+Deﬁne and collect needed inﬂuencers1. 
+Variables:a. 
+Amount of transaction•
+Total pending transactions•
+Pending balance•
+Days since customer creation•
+Days since bank account linked•
+Merchant id•
+Email domain•
+Reputation Level•
+Day of week of transaction•
+Merchant industry•
+Ba
+
+--- EXTRACTING PRD_ Switchboard - Vendor Agnostic User Authentication Middleware-2025081511004959.pdf ---
+                                        
+PRD: Switchboard - Vendor Agnostic User Authentication 
+Middleware
+                                        
+Links:
+Design: 
+ 
+ 
+Objective
+Build a ﬂexible internal middleware authentication service that supports multi-provider user authentication and 
+veriﬁcation. This service will abstract the dependency on a single vendor by adopting a many-to-one 
+architecture, enabling modular and interchangeable integrations for user, phone, and device veriﬁcation.
+Goals
+Architecture Approach
+Core Features & Requirements
+1. User Identity Veriﬁcation
+Purpose: Conﬁrm a user’s identity using external KYC providers.
+Requirements:
+https://lucid.app/lucidchart/4ceb257a-f758-4f64-9fd3-1a4edf92bf02/edit?  https://docs.google.com/document/d/1Nvp2aOG4JwlLgCKp4z0o-IPrrxVuTgGnzUdEMNc0zKA/edit?
+tab=t.0#heading=h.uczdedg71f5  https://docs.google.com/document/d/1h1ajlxy5PMgu8ZJKWOWhT8ALRKhSYGqrXMcXAoGxw_M/edit?
+tab=t.0
+Reduce reliance on any single third-party provider.•
+Improve ﬂexibility for vendor evaluation and negotiation.•
+Ensure comprehensive user validation across identity, phone, and device signals.•
+Middleware Layer: Acts as a uniﬁed interface to abstract away vendor-speciﬁc implementations.•
+Many-to-One Design:•
+Pluggable architecture to allow testing and switching between multiple vendors, with the ability to 
+weight vendors higher based on cost, relationship, etc. •
+Centralizes API calls for veriﬁcation logic while allowing diﬀerent veriﬁcation strat
+
+--- EXTRACTING Subscriptions 2.0 PRD.pdf ---
+                                        
+Subscriptions 2.0
+                                        
+Overview
+Aeropay’s current subscription system is built on legacy infrastructure that limits scalability, ﬂexibility, and 
+merchant usability. This initiative aims to revive and modernize subscriptions by redesigning the backend 
+architecture and delivering essential, merchant- and user-centric features: intelligent retry logic (Aeroﬁx), 
+upgrade/downgrade ﬂows, pause/resume and cancellation options, customizable plan names, automatic 
+notiﬁcations, and ﬁnancial reporting tools. The new solution will enhance reliability, transparency, and revenue 
+recovery, driving higher adoption among merchants and a better experience for subscribers. Overall Lift to get 
+our subscriptions to a scalable state is an XL tshirt size. 
+What (Scope)
+A complete re-architecture and feature expansion of the subscription engine, including:
+Why (Business & User Value)
+Product Owner: @Trisha Doran @Jatin 
+Lead Developer:  
+Slack:
+Team: 
+Applicable Links: 
+Initiative Link:
+Scoping Link: 
+Smart retry logic system (Aeroﬁx) to recover failed payments•
+Merchant ability to rename, update, or remove subscription plans•
+Customer-initiated upgrades, downgrades, pause/resume, and cancellation ﬂows•
+Automated customer notiﬁcations for plan price changes or discontinuations•
+Excel export of subscription data for reconciliation•
+Migration from legacy Flask to scalable AWS Lambda/Step Functions architecture•
+UI enhan
+
+--- EXTRACTING Universal Merchant-2025081511290274.pdf ---
+                                        
+Universal Merchant
+                                        
+Overview
+Universal Merchant seeks to enable merchants and partners to leverage our network of products. The use could 
+be for a single product, like sync, or the entire network suite. Given that we do not have proper support of a 
+partner relationship in our platform or the full foundation needed for a scalable merchant conﬁguration, we will 
+need to address this as part of Universal merchant. 
+Description
+The primary focus will be creating a scalable hierarchy for our client conﬁguration. With this conﬁguration we 
+will need to ensure that all parts of the Aeronetwork are leveraging Aeropass. Once the hierarchy and Aeropass 
+are completed, we can then focus on extending the support to our Admin and Merchant portals. 
+What
+Pass Compatibility/Preparation
+Aerosync and Aeropay (websdk) already leverage Aeropass at the user level. We will need to extend this to the 
+Aeropay API so that the foundation of Aeropass functionality is consistent. 
+Merchant Realignment
+Expanding Conﬁguration Levels
+At present we have two levels of conﬁguration, Merchant and Merchant Location. These two levels have been 
+forced into functionality that they were not intended for and has resulted in lack of clarity when conﬁguring 
+new accounts. With interviewing our client facing teams and understanding our data sets, it can be resolved by 
+expanding our levels and introducing a scalable hierarchy. This hi
+
+--- EXTRACTING Vendors and Pricing details-2025081511005785.pdf ---
+                                        
+Vendors and Pricing details
+                                        
+Trestle 
+Per Adam, football season should put us at 500k tier
+Geocomply
+Annual GeoComply 
+Revshare 
+GeoComply Cost
+Tier 1 $0-$250,000 $0.25 per IDComply Lookup
+$0.01 per device ﬁngerprinting
+Tier 2 $250,001-$500,000 $0.12 per IDComply Lookup
+$0.01 per device ﬁngerprinting
+Tier 3 $500,001+ $0.00 unlimited use
+Socure 
+Prove
+Revenue Share: A percentage-based revenue-sharing model where GeoComply and Aeropay will share 
+revenue generated from referred business bidirectionally.•
+For Merchants introduced to GeoComply or Aeropay by the other party: 25% of net revenue•
+For Merchants that Aeropay enables a GeoComply/Aeropay solution: 10% of net revenue•
+                                    
+                        
