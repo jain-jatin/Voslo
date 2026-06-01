@@ -1,56 +1,130 @@
-# PRD: [Feature Name]
+# Product Requirements Document
+## [Feature/Product Name]
 
-**Author:** [Name]
-**Date:** [Date]
-**Status:** Draft
+| Field | Detail |
+|---|---|
+| **Project Name** | [Name] |
+| **Target Release** | [Date] |
+| **Status** | [Status] |
+| **Product Manager** | [Name] |
+| **Engineering Lead** | [Name] |
+| **Design Lead** | [Name] |
+| **Last Updated** | [Date] |
 
 ---
 
-## 1. Hypothesis
+## 1. Background and Context
+[Provide background context and the history of the feature.]
 
-We believe [action] will [outcome] for [users], measured by [metric].
+---
 
-## 2. Problem
+## 2. Problem Statement
 
-**Who has this problem:**
+### What problem are we solving?
+[Describe the problem in detail from merchant, customer, and technical perspectives.]
 
-**How bad is it:** (frequency, severity, data)
+### Who are we solving it for?
+[Identify the target audience/personas.]
 
-**What happens if we don't solve it:**
+### Why is this a priority now?
+[Explain the urgency and impact.]
 
-## 3. Strategic Fit
+---
 
-**Why this problem, why now:**
+## 3. Goals and Success Metrics
 
-**Connection to OKRs:**
+### North Star Metric
+**[Metric Name]**
+[Description of the metric]
 
-**Alternatives considered:**
+### Supporting KPIs
 
-## 4. Solution
+| Goal | Metric | Baseline | Target |
+|---|---|---|---|
+| [Goal] | [Metric] | [Baseline] | [Target] |
 
-**What we're building:**
+### Non-Goals (Out of Scope for this release)
+- [Non-Goal 1]
+- [Non-Goal 2]
 
-**User flow:**
-1. 
-2. 
-3. 
+---
 
-**Key interactions:**
+## 4. User Stories and Functional Requirements
 
-## 5. Success Metrics
+### Merchant Stories
 
-| Metric | Type | Baseline | Target | Timeframe |
-|--------|------|----------|--------|-----------|
-| | Primary | | | |
-| | Secondary | | | |
-| | Guardrail | | | |
+| User Story | Priority | Acceptance Criteria |
+|---|---|---|
+| [Story] | [Priority] | [Criteria] |
 
-## 6. Non-Goals
+### Customer Stories
 
-- What we're explicitly NOT doing:
-- Features we considered and cut:
+| User Story | Priority | Acceptance Criteria |
+|---|---|---|
+| [Story] | [Priority] | [Criteria] |
 
-## 7. Open Questions
+---
 
-| Question | Owner | Due Date |
-|----------|-------|---------|
+## 5. User Experience and Design
+
+### User Flows
+[Link to flows]
+
+### Wireframes and Mockups
+[Link to mockups]
+
+### Key UX Considerations
+[List considerations like empty states, error states, etc.]
+
+---
+
+## 6. Technical Context and Constraints
+
+### Architecture Migration
+[Describe architecture changes.]
+
+### Dependencies
+[List dependencies.]
+
+### Technical Constraints
+[List constraints.]
+
+### Security and Privacy
+[List security requirements.]
+
+---
+
+## 7. Risks, Assumptions, and Open Questions
+
+### Assumptions
+- [Assumption 1]
+
+### Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|---|---|---|---|
+| [Risk] | [Likelihood] | [Impact] | [Mitigation] |
+
+### Open Questions
+
+| Question | Owner | Due |
+|---|---|---|
+| [Question] | [Owner] | [Due Date] |
+
+---
+
+## 8. Go-to-Market Strategy
+
+### Target Audience for Launch
+[Describe audience]
+
+### Rollout Approach
+1. [Phase 1]
+2. [Phase 2]
+
+### Support Strategy
+[Describe support plan]
+
+---
+
+*This document is a living spec. Changes to scope, requirements, or metrics should be tracked in the revision history and communicated to all stakeholders before implementation begins.*
